@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>🔥 Social PRO</h2>
+    <div>
+        <button onclick="irInicio()">Inicio</button>
+        <button onclick="irCrear()">Crear</button>
+        <button onclick="irPerfil()">Perfil</button>
+        <button onclick="irIA()">IA</button>
+        <button onclick="logout()">Salir</button>
+    </div>
+</header>
+
+
+
+<div class="container">
+
+    <!-- FEED -->
+    <div id="inicio" class="view active">
+        <div id="posts"></div>
+    </div>
+
+    <!-- CREAR -->
+    <div id="crear" class="view">
+        <input id="titulo" placeholder="Título">
+        <textarea id="contenido"></textarea>
+        <input id="imagen" placeholder="URL imagen">
+        <button onclick="crearPost()">Publicar</button>
+    </div>
+
+    <!-- PERFIL -->
+    <div id="perfil" class="view">
+        <h3 id="usuario"></h3>
+        <div id="misPosts"></div>
+    </div>
+
+    <!-- IA -->
+    <div id="ia" class="view">
+        <div id="chat"></div>
+        <input id="pregunta">
+        <button onclick="preguntarIA()">Enviar</button>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
